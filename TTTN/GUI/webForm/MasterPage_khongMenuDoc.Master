@@ -1,0 +1,671 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage_khongMenuDoc.master.cs" Inherits="GUI.webForm.MasterPage_khongMenuDoc" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>IMUA - Cung cấp mỹ phẩm chính hãng online giá rẻ
+  nhất</title>
+    <link rel="shortcut icon" href="/images/iconlogo.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="/css/css.css?family=Open+Sans:400,300,700">
+    <link rel="stylesheet" type="text/css" href="/css/StyleZipAll14.css?v=0019">
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="wrapper_content_page" class="wrap">
+
+            <div id="header" style="background-color: #F0F0F0">
+                <div class="header">
+                    <div class="container hidden-xs" style="height: 36px">
+                        <ul class="nav-right">
+                            <li>
+                                <span title="Tổng số lượng truy cập"> Đang truy cập:</span>
+              <b> <asp:Label ID="LblTruyCap" runat="server"></asp:Label> </b>
+                            </li>
+                            <li>
+                                <span title="Tổng số lượng truy cập"> Tổng số lượng truy cập:</span>
+              <b> <asp:Label ID="lblSLKhach" runat="server"></asp:Label> </b>
+                            </li>
+                            <li>
+                                <a href="tel:0911403114" title="0911403114">Hotline:
+              <b>0911 403 114</b></a>
+                            </li>
+                            <li>
+                                <a href="tel:19007014" title="1900 7014">Tổng đài tư
+              vấn: <b>1900 7014</b></a>
+                            <li class="dropdown setting">
+                                <a data-toggle="dropdown" role="button" href="#" class="dropdown-toggle"><span>Tài khoản</span>
+                                    <i aria-hidden="true" class="fa fa-angle-down"></i></a>
+                                <div class="dropdown-menu">
+                                    <ul class="account account_header">
+                                        <li><a href="/dang-nhap.html" title="đăng nhập">
+                                            <img src="/images/dangnhap.png" alt="dang nhap"></a></li>
+                                        <li><a href="/dang-ky.html" title="đăng ký">
+                                            <img src="/images/dangky.png" alt="dang ky"></a></li>
+                                        <li><a href="/dang-nhap-facebook.html" target="_blank" title="facebook">
+                                            <img src="/images/dangnhapfacebook.png" alt="dang nhap facebook"></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-header6">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2 col-sm-7 col-xs-12" style="margin-top: 10px">
+                        <a class="icon-menu navbar-toggle" id="mobileMenu"
+                            data-toggle="collapse"></a>
+                        <div class="logo logo6 clearfix">
+                            <a href="../index.aspx">
+                                <img src="/images/logo.png" class="logo-dk"
+                                    alt="Logo HoanHi.com.vn"><img class="logo-mb"
+                                        src="/images/logo_mb.png" alt="Logo Imua"></a>
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-sm-5 col-xs-12 bannerok">
+                        <a href="../index.aspx">
+                            <img src="/images/mua-la-co-qua-ok.png"
+                                alt="mua-la-co-qua"></a>
+                    </div>
+                    <div class="col-md-5 col-sm-5 col-xs-12">
+                        <div class="wrap-search-cart6">
+                            <div class="search-form6">
+                                <div class="smart-search-form border radius">
+                                    <asp:TextBox ID="txtTim" runat="server" Width="187px"></asp:TextBox>
+                                    <asp:Button ID="btnTim" runat="server" Text="Tìm" OnClick="btnTim_Click" />
+
+                                </div>
+                            </div>
+                            <div class="mini-cart-box mini-cart6">
+                                <a class="mini-cart-link border radius" href="../GioHang.aspx">Giỏ </a>
+                                <div class="mini-cart-content" id="ShowListOrder">
+                                    Không có gì trong giỏ cả
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Main Header -->
+        <div class="header-nav7">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 hidden-sm hidden-xs">
+                        <div class="wrap-cat-icon wrap-cat-icon-hover wrap-cat-icon6">
+                            <h4 class="title14 white title-cat-icon">Danh mục sản phẩm</h4>
+                            <div class="wrap-list-cat-icon">
+                                <ul class="list-cat-icon">
+                                    <li class="has-cat-mega">
+                                        <a href="/SanPham/DSSanPhamMa.aspx?maDanhMuc=1">
+                                            <img alt="my-pham-trang-diem hinh 1" title="Mỹ Phẩm Trang Điểm hình 1" src="/images/danh-muc/my-pham-trang-diem-icon.png" />
+                                            <span>Mỹ Phẩm Trang Điểm</span>
+                                        </a>
+                                        <div class="cat-mega-menu cat-mega-style1">
+                                            <div class="row">
+                                                <div class="col-md-4 col-sm-3">
+                                                    <div class="list-cat-mega-menu">
+                                                        <h4 class="title-cat-mega-menu">Mỹ Phẩm Trang Điểm</h4>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="/SanPham/DSSanPhamTen.aspx?tenSp=Son" title="Son Môi">Son Môi</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/SanPham/DSSanPhamTen.aspx?tenSp=Kem" title="Kem Nền">Kem Nền</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/SanPham/DSSanPhamTen.aspx?tenSp=Phấn" title="Phấn Nước">Phấn Nước</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/SanPham/DSSanPhamTen.aspx?tenSp=Che Khuyết Điểm" title="Che Khuyết Điểm">Che Khuyết Điểm</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/SanPham/DSSanPhamTen.aspx?tenSp=Phấn Tạo Khối" title="Phấn Tạo Khối, Má hồng">Phấn Tạo Khối, Má hồng</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/SanPham/DSSanPhamTen.aspx?tenSp=Trang điểm" title="Trang Điểm Mắt & Dưỡng Mắt">Trang Điểm Mắt &Dưỡng Mắt</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-8 col-sm-3">
+                                                    <div class="banner-image">
+                                                        <a href="/SanPham/DSSanPhamMa.aspx?maDanhMuc=1">
+                                                            <img src="/images/danh-muc/my-pham-trang-diem-menu-right.jpg" alt="my-pham-trang-diem hinh 2" title="Mỹ Phẩm Trang Điểm hình 2" />
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="has-cat-mega">
+                                        <a href="/SanPham/DSSanPhamMa.aspx?maDanhMuc=2">
+                                            <img alt="ho-tro-dieu-tri hinh 1" title="Hỗ Trợ Điều Trị hình 1" src="/images/danh-muc/ho-tro-dieu-tri-icon.png" />
+                                            <span>Hỗ Trợ Điều Trị</span>
+                                        </a>
+                                        <div class="cat-mega-menu cat-mega-style1">
+                                            <div class="row">
+                                                <div class="col-md-4 col-sm-3">
+                                                    <div class="list-cat-mega-menu">
+                                                        <h4 class="title-cat-mega-menu">Hỗ Trợ Điều Trị</h4>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="/SanPham/DSSanPhamTen.aspx?tenSp=Mụn" title="Hỗ Trợ Điều Trị Mụn">Hỗ Trợ Điều Trị Mụn</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/SanPham/DSSanPhamTen.aspx?tenSp=Mỡ" title="Giảm Cân Tan Mỡ Bụng">Giảm Cân Tan Mỡ Bụng</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/SanPham/DSSanPhamTen.aspx?tenSp=Rụng Tóc" title="Hỗ Trợ Điều Trị Rụng Tóc">Hỗ Trợ Điều Trị Rụng Tóc</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/SanPham/DSSanPhamTen.aspx?tenSp=Mọc Tóc" title="Thuốc Mọc Râu, Mọc Tóc">Thuốc Mọc Râu, Mọc Tóc</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/SanPham/DSSanPhamTen.aspx?tenSp=Hôi Nách" title="Hỗ Trợ Điều Trị Hôi Nách">Hỗ Trợ Điều Trị Hôi Nách</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/SanPham/DSSanPhamTen.aspx?tenSp=Trị Thâm" title="Hỗ Trợ Điều Trị Thâm, Nám">Hỗ Trợ Điều Trị Thâm, Nám</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/SanPham/DSSanPhamTen.aspx?tenSp=Sẹo" title="Hỗ Trợ Điều Trị Sẹo, Rạn Da">Hỗ Trợ Điều Trị Sẹo, Rạn Da</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/SanPham/DSSanPhamTen.aspx?tenSp=Trắng Răng" title="Trị Hôi Miệng Trắng Răng Tại Nhà">Trị Hôi Miệng Trắng Răng Tại Nhà</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-8 col-sm-3">
+                                                    <div class="banner-image">
+                                                        <a href="/SanPham/DSSanPhamMa.aspx?maDanhMuc=2">
+                                                            <img src="/images/danh-muc/ho-tro-dieu-tri-menu-right.jpg" alt="ho-tro-dieu-tri hinh 2" title="Hỗ Trợ Điều Trị hình 2" />
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="has-cat-mega">
+                                        <a href="/SanPham/DSSanPhamMa.aspx?maDanhMuc=3">
+                                            <img alt="cham-soc-da-mat hinh 1" title="Chăm Sóc Da Mặt hình 1" src="/images/danh-muc/cham-soc-da-mat-icon.png" />
+                                            <span>Chăm Sóc Da Mặt</span>
+                                        </a>
+                                        <div class="cat-mega-menu cat-mega-style1">
+                                            <div class="row">
+                                                <div class="col-md-4 col-sm-3">
+                                                    <div class="list-cat-mega-menu">
+                                                        <h4 class="title-cat-mega-menu">Chăm Sóc Da Mặt</h4>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="/SanPham/DSSanPhamTen.aspx?tenSp=Sữa Rauwr Mặt" title="Sữa Rửa Mặt">Sữa Rửa Mặt</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/SanPham/DSSanPhamTen.aspx?tenSp=Nước Tẩy Trang" title="Nước Tẩy Trang">Nước Tẩy Trang</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/SanPham/DSSanPhamTen.aspx?tenSp=Dưỡng Trắng" title="Dưỡng Trắng Da Mặt">Dưỡng Trắng Da Mặt</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/SanPham/DSSanPhamTen.aspx?tenSp=Lão Hoá" title="Chống Lão Hóa Da Mặt">Chống Lão Hóa Da Mặt</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/SanPham/DSSanPhamTen.aspx?tenSp=Dưỡng Da Mặt" title="Mặt Nạ Dưỡng Da Mặt">Mặt Nạ Dưỡng Da Mặt</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/SanPham/DSSanPhamTen.aspx?tenSp=Tẩy Tế Bào Chết" title="Tẩy Tế Bào Chết Cho Da">Tẩy Tế Bào Chết Cho Da</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/SanPham/DSSanPhamTen.aspx?tenSp=Nước Hoa" title="Nước Hoa Hồng, Xịt Khoáng">Nước Hoa Hồng, Xịt Khoáng</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-8 col-sm-3">
+                                                    <div class="banner-image">
+                                                        <a href="/SanPham/DSSanPhamMa.aspx?maDanhMuc=3">
+                                                            <img src="/images/danh-muc/cham-soc-da-mat-menu-right.jpg" alt="cham-soc-da-mat hinh 2" title="Chăm Sóc Da Mặt hình 2" />
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="has-cat-mega">
+                                        <a href="/SanPham/DSSanPhamMa.aspx?maDanhMuc=4">
+                                            <img alt="cham-soc-toan-than hinh 1" title="Chăm Sóc Toàn Thân hình 1" src="/images/danh-muc/cham-soc-toan-than-icon.png" />
+                                            <span>Chăm Sóc Toàn Thân</span>
+                                        </a>
+                                        <div class="cat-mega-menu cat-mega-style1">
+                                            <div class="row">
+                                                <div class="col-md-4 col-sm-3">
+                                                    <div class="list-cat-mega-menu">
+                                                        <h4 class="title-cat-mega-menu">Chăm Sóc Toàn Thân</h4>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="/SanPham/DSSanPhamTen.aspx?tenSp=Tẩy Lông" title="Kem Tẩy Lông">Kem Tẩy Lông</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/SanPham/DSSanPhamTen.aspx?tenSp=Chống Nắng" title="Kem Chống Nắng">Kem Chống Nắng</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/SanPham/DSSanPhamTen.aspx?tenSp=Sữa Tắm" title="Sữa Tắm Trắng Da">Sữa Tắm Trắng Da</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/SanPham/DSSanPhamTen.aspx?tenSp=Xịt Khử Mùi" title="Xịt Thơm, Xịt Khử Mùi">Xịt Thơm, Xịt Khử Mùi</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/SanPham/DSSanPhamTen.aspx?tenSp=Kem Dưỡng" title="Kem Dưỡng Da Tay">Kem Dưỡng Da Tay</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/SanPham/DSSanPhamTen.aspx?tenSp=Dưỡng Trắng Da" title="Dưỡng Trắng Da Toàn Thân">Dưỡng Trắng Da Toàn Thân</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-8 col-sm-3">
+                                                    <div class="banner-image">
+                                                        <a href="/SanPham/DSSanPhamMa.aspx?maDanhMuc=4">
+                                                            <img src="/images/danh-muc/cham-soc-toan-than-menu-right.jpg" alt="cham-soc-toan-than hinh 2" title="Chăm Sóc Toàn Thân hình 2" />
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="has-cat-mega">
+                                        <a href="/SanPham/DSSanPhamMa.aspx?maDanhMuc=5">
+                                            <img alt="my-pham-cham-soc-toc hinh 1" title="Mỹ Phẩm Chăm Sóc Tóc hình 1" src="/images/danh-muc/my-pham-cham-soc-toc-icon.png" />
+                                            <span>Chăm Sóc Tóc</span>
+                                        </a>
+                                        <div class="cat-mega-menu cat-mega-style1">
+                                            <div class="row">
+                                                <div class="col-md-4 col-sm-3">
+                                                    <div class="list-cat-mega-menu">
+                                                        <h4 class="title-cat-mega-menu">Mỹ Phẩm Chăm Sóc Tóc</h4>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="/SanPham/DSSanPhamTen.aspx?tenSp=Dầu Gội Khô" title="Dầu Gội Khô">Dầu Gội Khô</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/SanPham/DSSanPhamTen.aspx?tenSp=Xịt Dưỡng Tóc" title="Xịt Dưỡng Tóc">Xịt Dưỡng Tóc</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/SanPham/DSSanPhamTen.aspx?tenSp=Dầu Gội Đầu" title="Dầu Gội Dầu Xả Tóc">Dầu Gội Dầu Xả Tóc</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/SanPham/DSSanPhamTen.aspx?tenSp=Dầu Dừa" title="Dầu Dừa Dưỡng Tóc">Dầu Dừa Dưỡng Tóc</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/SanPham/DSSanPhamTen.aspx?tenSp=Kem Ủ" title="Kem Ủ, Thuốc Nhuộm Tóc">Kem Ủ, Thuốc Nhuộm Tóc</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-8 col-sm-3">
+                                                    <div class="banner-image">
+                                                        <a href="/SanPham/DSSanPhamMa.aspx?maDanhMuc=5">
+                                                            <img src="/images/danh-muc/my-pham-cham-soc-toc-menu-right.jpg" alt="my-pham-cham-soc-toc hinh 2" title="Mỹ Phẩm Chăm Sóc Tóc hình 2" />
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="has-cat-mega">
+                                        <a href="/SanPham/DSSanPhamMa.aspx?maDanhMuc=6">
+                                            <img alt="thuong-hieu-ua-chuong hinh 1" title="Thương Hiệu Ưa Chuộng hình 1" src="/images/danh-muc/thuong-hieu-ua-chuong-icon.png" />
+                                            <span>Thương Hiệu Ưa Chuộng</span>
+                                        </a>
+                                        <div class="cat-mega-menu cat-mega-style1">
+                                            <div class="row">
+                                                <div class="col-md-4 col-sm-3">
+                                                    <div class="list-cat-mega-menu">
+                                                        <h4 class="title-cat-mega-menu">Thương Hiệu Ưa Chuộng</h4>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="/SanPham/DSSanPhamTen.aspx?tenSp=Pháp" title="Thương Hiệu Pháp">Thương Hiệu Pháp</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/SanPham/DSSanPhamTen.aspx?tenSp=Mỹ" title="Thương Hiệu Mỹ">Thương Hiệu Mỹ</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/SanPham/DSSanPhamTen.aspx?tenSp=Nhật" title="Thương Hiệu Nhật Bản">Thương Hiệu Nhật Bản</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/SanPham/DSSanPhamTen.aspx?tenSp=Hàn" title="Mỹ Phẩm Hàn Quốc">Mỹ Phẩm Hàn Quốc</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/SanPham/DSSanPhamTen.aspx?tenSp=Thái" title="Thương Hiệu Thái Lan">Thương Hiệu Thái Lan</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/SanPham/DSSanPhamTen.aspx?tenSp=Nga" title="Thương Hiệu Nga">Thương Hiệu Nga</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/SanPham/DSSanPhamTen.aspx?tenSp=Úc" title="Thương Hiệu Úc">Thương Hiệu Úc</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/SanPham/DSSanPhamTen.aspx?tenSp=Neutrogena" title="Mỹ Phẩm Neutrogena">Mỹ Phẩm Neutrogena</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 col-sm-3">
+                                                    <div class="list-cat-mega-menu">
+                                                        <h4 class="title-cat-mega-menu2">&nbsp;</h4>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="/danh-muc/my-pham-innisfree-han-quoc.html" title="Mỹ Phẩm Innisfree">Mỹ Phẩm Innisfree</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/danh-muc/my-pham-missha.html" title="Mỹ Phẩm Missha">Mỹ Phẩm Missha</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/danh-muc/my-pham-shewhite.html" title="Mỹ phẩm Shewhite">Mỹ phẩm Shewhite</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/danh-muc/my-pham-pizu.html" title="Mỹ Phẩm Pizu">Mỹ Phẩm Pizu</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/danh-muc/my-pham-cocoon.html" title="Mỹ phẩm Cocoon">Mỹ phẩm Cocoon</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/danh-muc/dau-dua-coco-secret.html" title="Dầu dừa Coco Secret">Dầu dừa Coco Secret</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/danh-muc/mat-ong-queen-bee.html" title="Mật ong Queen Bee">Mật ong Queen Bee</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/danh-muc/my-pham-xach-tay-chinh-hang.html" title="Các Thương Hiệu Khác">Các Thương Hiệu Khác</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 col-sm-3">
+                                                    <div class="banner-image">
+                                                        <a href="/SanPham/DSSanPhamMa.aspx?maDanhMuc=6">
+                                                            <img src="/images/danh-muc/thuong-hieu-ua-chuong-menu-right.jpg" alt="thuong-hieu-ua-chuong hinh 2" title="Thương Hiệu Ưa Chuộng hình 2" />
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="has-cat-mega">
+                                        <a href="/SanPham/DSSanPhamMa.aspx?maDanhMuc=7">
+                                            <img alt="suc-khoe-dinh-duong hinh 1" title="Sức Khỏe Dinh Dưỡng hình 1" src="/images/danh-muc/suc-khoe-dinh-duong-icon.png" />
+                                            <span>Sức Khỏe Dinh Dưỡng</span>
+                                        </a>
+                                        <div class="cat-mega-menu cat-mega-style1">
+                                            <div class="row">
+                                                <div class="col-md-4 col-sm-3">
+                                                    <div class="list-cat-mega-menu">
+                                                        <h4 class="title-cat-mega-menu">Sức Khỏe Dinh Dưỡng</h4>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="/SanPham/DSSanPhamTen.aspx?tenSp=Dầu Dừa" title="Dầu Dừa Nguyên Chất">Dầu Dừa Nguyên Chất</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/SanPham/DSSanPhamTen.aspx?tenSp=Mật Ong" title="Mật Ong Thiên Nhiên">Mật Ong Thiên Nhiên</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-8 col-sm-3">
+                                                    <div class="banner-image">
+                                                        <a href="/SanPham/DSSanPhamMa.aspx?maDanhMuc=7">
+                                                            <img src="/images/danh-muc/suc-khoe-dinh-duong-menu-right.jpg" alt="suc-khoe-dinh-duong hinh 2" title="Sức Khỏe Dinh Dưỡng hình 2" />
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="has-cat-mega">
+                                        <a href="/sanpham.aspx">
+                                            <img alt="sale-off-moi-tuan hinh 1" title="Các Sản Phẩm Khác hình 1" src="/images/danh-muc/sale-off-moi-tuan-icon.png" />
+                                            <span>Các Sản Phẩm Khác</span>
+                                        </a>
+                                        <div class="cat-mega-menu cat-mega-style1">
+                                            <div class="row">
+                                                <div class="col-md-4 col-sm-3">
+                                                    <div class="list-cat-mega-menu">
+                                                        <h4 class="title-cat-mega-menu">Các Sản Phẩm Khác</h4>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="/SanPham/DSSanPhamTen.aspx?tenSp=Phụ kiện làm đẹp" title="Phụ Kiện Làm Đẹp">Phụ Kiện Làm Đẹp</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/SanPham/DSSanPhamTen.aspx?tenSp=Nước Hoa Chính Hãng" title="Nước Hoa Chính Hãng">Nước Hoa Chính Hãng</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/SanPham/DSSanPhamTen.aspx?tenSp=Mỹ Phẩm" title="Các Dòng Mỹ Phẩm Khác">Các Dòng Mỹ Phẩm Khác</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-8 col-sm-3">
+                                                    <div class="banner-image">
+                                                        <a href="/sanpham.aspx">
+                                                            <img src="/images/danh-muc/sale-off-moi-tuan-menu-right.jpg" alt="sale-off-moi-tuan hinh 2" title="Các Sản Phẩm Khác hình 2" />
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-9 col-sm-12 col-xs-12">
+                        <nav class="main-nav main-nav6 main-nav7">
+                            <ul class="main-nav-ul hmob">
+                                <li class="menu-item-has-children">
+                                    <a href="../huong-dan-mua-hang.aspx" title="Hướng dẫn mua hàng">Hướng dẫn mua hàng</a>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="../tin-tuc.aspx" title="Tin khuyến mãi">Tin nổi bật</a>
+                                </li>
+                                <li class="has-mega-menu">
+                                    <a href="/sale-off.aspx">Sản phẩm Sale Off</a>
+                                    <div class="mega-menu">
+                                        <div class="row">
+                                            <div class="col-md-5 col-sm-4 col-xs-12">
+                                                <div class="mega-adv">
+                                                    <div class="banner-image">
+                                                        <a href="/danh-muc/sale-off.html" title="Sản phẩm Sale Off từ 10% - 40%">
+                                                            <img src="/images/26.jpg      " alt="Sản phẩm Sale Off từ 10% - 40%" />
+                                                        </a>
+                                                    </div>
+                                                    <div class="mega-adv-info">
+                                                        <h4 class="title18">
+                                                            <a href="/sale-off.aspx" title="Sản phẩm Sale Off từ 10% - 40%">Sản phẩm Sale Off từ 10% - 40%</a>
+                                                        </h4>
+                                                        <p class="desc">
+                                                            <p style="text-align: justify;">Khi đến với Website này bạn sẽ mua được những sản phẩm chất lượng v &agrave;&nbsp;c &oacute;cơ hội được sale off đến 50% k &egrave;m theo nhiều qu &agrave;tặng hấp dẫn kh &aacute;c</p>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-7 col-sm-8 col-xs-12">
+                                                <div class="mega-new-arrival">
+                                                    <h4 class="mega-menu-title">Danh sách sản phẩm</h4>
+                                                    <div class="mega-new-arrival-slider">
+                                                        <div class="wrap-item" data-pagination="false" data-navigation="true" data-itemscustom="[[0,1],[768,2]]">
+                                                            <div class="item">
+
+                                                                <asp:DataList ID="dtlst1" runat="server" RepeatColumns="2">
+                                                                    <ItemTemplate>
+                                                                        <div class="item-product-ajax item-product ban-fix bpsoff">
+                                                                            <div class="product-thumb">
+                                                                                <table class="nav-justified">
+                                                                                    <tr>
+                                                                                        <td class="product-thumb-link" style="text-align: center">
+                                                                                            <asp:HyperLink ID="hpl1" runat="server" NavigateUrl='<%# "~/ChiTietSanPham.aspx?maSP="+Eval("maSP").ToString() %>'>
+                                                                                                <asp:Image ID="img1" runat="server" CssClass="mwia" ImageUrl='<%# Eval("hinhAnh") %>' />
+                                                                                            </asp:HyperLink>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td style="text-align: center">
+                                                                                            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl='<%# "~/ChiTietSanPham.aspx?maSP="+Eval("maSP").ToString() %>' CssClass="product-title" Text='<%# Eval("tenSp") %>'> </asp:HyperLink>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td class="product-price" style="color: orangered; text-align: center">
+                                                                                            <asp:Label ID="lb1" runat="server" Text='<%# Eval("gia") %>' CssClass="product-price"></asp:Label>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </div>
+                                                                        </div>
+                                                                    </ItemTemplate>
+                                                                </asp:DataList>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </li>
+                                <li class="has-mega-menu">
+                                    <a href="../kho-qua-tang.aspx" title="Kho quà tặng">Kho quà tặng</a>
+                                </li>
+                                <li class="has-mega-menu">
+                                    <a href="../lien-he.aspx" title="Liên hệ">Liên hệ</a>
+                                </li>
+                            </ul>
+                            <a href="#" class="toggle-mobile-menu">
+                                <span></span>
+                            </a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                nọi dung nhập ở đây
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <div id="footer">
+            <div class="footer_info">
+                <div class="container">
+                    <div class="page_info clearfix">
+                        <div class="col-md-2 col-sm-2 col-xs-6">
+                            <h4 class="title">Hỗ trợ khách hàng</h4>
+                            <p style="line-height: 19px;">
+                                <a href="/lk/huong-dan-mua-hang.html">Hướng dẫn mua
+              hàng</a><br>
+                                <a href="/lk/chinh-sach-doi-tra-hang.html">Chính sách
+              đổi trả</a><br>
+                                <a href="/lk/quy-dinh-van-chuyen.html">Quy định vận
+              chuyển</a><br>
+                                <a href="/lk/phuong-thuc-thanh-toan.html">Phương thức
+              thanh toán</a><br>
+                                <a href="/lk/chinh-sach-bao-mat.html">Chính sách bảo
+              mật</a>
+                            </p>
+                        </div>
+                        <div class="col-md-2 col-sm-2 col-xs-6">
+                            <h4 class="title">Website thuộc quyền</h4>
+                            <p>
+                                CÔNG TY TNHH HV NET<br>
+                                ĐKKD Số: 0313411135<br>
+                                Do Sở KH&amp;ĐT Tp. HCM<br>
+                                Cấp ngày 24/08/2015
+                            </p>
+                            <a href="http://online.gov.vn/"
+                                rel="nofollow" target="_blank" class="hidden-sm hidden-xs">
+                                <img src="/images/DangKyBoCongThuong.png"
+                                    alt="Imua.com.vn bộ công thương"
+                                    title="Imua.com.vn đã đăng ký bộ công thương"></a>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-12">
+                            <h4 class="title">Trung tâm phân phối</h4>
+                            <p>
+                                255 Bình Lợi, P.13, Q. Bình Thạnh, Tp. HCM<br>
+                                Tel: 0911 403 114 Email: info@HoanHi.com.vn<br>
+                                Website: <a href="https://imua.com.vn/" title="website HV Net"
+                                    rel="nofollow">www.HoanHi.com.vn</a><br>
+                                <a target="_blank" href="//www.dmca.com/Protection/Status.aspx?ID=31bbc2bc-e92e-4421-ab72-4d4e9809c626"
+                                    title="DMCA.com Protection Status" class="dmca-badge">
+                                    <img style="margin-top: 10px; height: 45px; margin-right: 10px;"
+                                        src="//images.dmca.com/Badges/DMCA_logo-grn-btn150w.png?ID=31bbc2bc-e92e-4421-ab72-4d4e9809c626"
+                                        alt="DMCA.com Protection Status"></a><strong style="display: block; margin-top: 8px"><a href="https://hvnet.vn/"
+                                            title="HV Net" rel="nofollow"
+                                            target="_blank"><img src="/images/logohvnet.png?v=01"
+                                                style="max-width: 16px; margin-right: 5px;">Được
+              Marketing &amp; Phân phối bởi <span style="color: #53b035">HV Net</span></a></strong><a href="/link.html?l=http://online.gov.vn/HomePage/CustomWebsiteDisplay.aspx?DocId=19495"
+                  rel="nofollow" target="_blank" class="hidden-lg hidden-md"><img style="margin-top: 12px;"
+                      src="/images/DangKyBoCongThuong.png" alt="Imua.com.vn bộ công thương"
+                      title="Imua.com.vn đã đăng ký bộ công thương"></a>
+                                <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"></script>
+                            </p>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-12">
+                            <div class="row" style="display: initial;">
+                                <img src="/images/address-shop1.jpg"
+                                    alt="address shop">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Payment -->
+                <div class="footer-tabs">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <div class="item-tag-footer">
+                                    <div class="title-tag-footer">
+                                        <span style="width: 130px">Tag quan tâm:</span>
+                                    </div>
+                                    <div class="list-tag-footer">
+                                        <a href="/tags/tags-san-pham-abc-home-1.html"
+                                            title="Trị thâm">Trị thâm</a> <a href="https://imua.com.vn/"
+                                                title="Trắng da">Trắng
+                    da</a> <a href="https://imua.com.vn/" title="Tan mỡ">Tan mỡ</a> <a href="https://imua.com.vn/"
+                        title="Trị mụn">Trị
+                    mụn</a> <a href="/tags/tags-san-pham-abc-home-1-2222.html"
+                        title="Cocoon">Cocoon</a> <a href="/tags/innisfree.html"
+                            title="Innisfree">Innisfree</a> <a href="/tags/pizu.html"
+                                title="Pizu">Pizu</a>
+                                        <a href="https://imua.com.vn/danh-muc/my-pham-shewhite.html"
+                                            title="Shewhite">Shewhite</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <div class=""></div>
+                                <div class="item-tag-footer">
+                                    <div class="title-tag-footer">
+                                        <span style="width: 80px">Tìm kiếm:</span>
+                                    </div>
+                                    <div class="list-tag-footer">
+                                        <a href="/tim-kiem.aspx?TimKiem=kem">kem trị mụn</a><a href="/tim-kiem.aspx?TimKiem=Sữa Tắm Trắng Da">sữa
+                    tắm trắng da</a><a href="/tim-kiem.aspx?TimKiem=Son Môi">son
+                    môi</a><a href="/tim-kiem.aspx?TimKiem=Nước Hoa">nước
+                    hoa hồng</a><a href="/tim-kiem.aspx?TimKiem=son">son</a><a href="/tim-kiem.html?tk=Serum">Serum</a><a href="/tim-kiem.html?tk=Giảm Cân">giam
+                    can</a><a href="/tim-kiem.aspx?TimKiem=Giảm Béo">giam
+                    beo</a><a href="/tim-kiem.aspx?TimKiem=Tăng Cân">tang
+                    can</a><a href="/tim-kiem.aspx?TimKiem=Son Môi">son moi</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mmb"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </form>
+</body>
+</html>

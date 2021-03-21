@@ -1,0 +1,160 @@
+C:\Users\DC Computer\Desktop\TTTN\GUI\obj\Debug\GUI.csprojAssemblyReference.cache
+C:\Users\DC Computer\Desktop\TTTN\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+C:\Users\DC Computer\Desktop\TTTN\GUI\bin\GUI.dll.config
+C:\Users\DC Computer\Desktop\TTTN\GUI\bin\GUI.dll
+C:\Users\DC Computer\Desktop\TTTN\GUI\bin\GUI.pdb
+C:\Users\DC Computer\Desktop\TTTN\GUI\bin\roslyn\csc.exe
+C:\Users\DC Computer\Desktop\TTTN\GUI\bin\roslyn\csc.exe.config
+C:\Users\DC Computer\Desktop\TTTN\GUI\bin\roslyn\csc.rsp
+C:\Users\DC Computer\Desktop\TTTN\GUI\bin\roslyn\csi.exe
+C:\Users\DC Computer\Desktop\TTTN\GUI\bin\roslyn\csi.exe.config
+C:\Users\DC Computer\Desktop\TTTN\GUI\bin\roslyn\csi.rsp
+C:\Users\DC Computer\Desktop\TTTN\GUI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\DC Computer\Desktop\TTTN\GUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\DC Computer\Desktop\TTTN\GUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\DC Computer\Desktop\TTTN\GUI\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\DC Computer\Desktop\TTTN\GUI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\DC Computer\Desktop\TTTN\GUI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\DC Computer\Desktop\TTTN\GUI\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\DC Computer\Desktop\TTTN\GUI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\DC Computer\Desktop\TTTN\GUI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\DC Computer\Desktop\TTTN\GUI\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\DC Computer\Desktop\TTTN\GUI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\DC Computer\Desktop\TTTN\GUI\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\DC Computer\Desktop\TTTN\GUI\bin\roslyn\System.AppContext.dll
+C:\Users\DC Computer\Desktop\TTTN\GUI\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\DC Computer\Desktop\TTTN\GUI\bin\roslyn\System.Console.dll
+C:\Users\DC Computer\Desktop\TTTN\GUI\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\DC Computer\Desktop\TTTN\GUI\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\DC Computer\Desktop\TTTN\GUI\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\DC Computer\Desktop\TTTN\GUI\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\DC Computer\Desktop\TTTN\GUI\bin\roslyn\System.IO.Compression.dll
+C:\Users\DC Computer\Desktop\TTTN\GUI\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\DC Computer\Desktop\TTTN\GUI\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\DC Computer\Desktop\TTTN\GUI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\DC Computer\Desktop\TTTN\GUI\bin\roslyn\System.Net.Http.dll
+C:\Users\DC Computer\Desktop\TTTN\GUI\bin\roslyn\System.Net.Sockets.dll
+C:\Users\DC Computer\Desktop\TTTN\GUI\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\DC Computer\Desktop\TTTN\GUI\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\DC Computer\Desktop\TTTN\GUI\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\DC Computer\Desktop\TTTN\GUI\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\DC Computer\Desktop\TTTN\GUI\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\DC Computer\Desktop\TTTN\GUI\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\DC Computer\Desktop\TTTN\GUI\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\DC Computer\Desktop\TTTN\GUI\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\DC Computer\Desktop\TTTN\GUI\bin\roslyn\System.ValueTuple.dll
+C:\Users\DC Computer\Desktop\TTTN\GUI\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\DC Computer\Desktop\TTTN\GUI\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\DC Computer\Desktop\TTTN\GUI\bin\roslyn\System.Xml.XPath.dll
+C:\Users\DC Computer\Desktop\TTTN\GUI\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\DC Computer\Desktop\TTTN\GUI\bin\roslyn\vbc.exe
+C:\Users\DC Computer\Desktop\TTTN\GUI\bin\roslyn\vbc.exe.config
+C:\Users\DC Computer\Desktop\TTTN\GUI\bin\roslyn\vbc.rsp
+C:\Users\DC Computer\Desktop\TTTN\GUI\bin\roslyn\VBCSCompiler.exe
+C:\Users\DC Computer\Desktop\TTTN\GUI\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\DC Computer\Desktop\TTTN\GUI\bin\Antlr3.Runtime.dll
+C:\Users\DC Computer\Desktop\TTTN\GUI\bin\AspNet.ScriptManager.bootstrap.dll
+C:\Users\DC Computer\Desktop\TTTN\GUI\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\DC Computer\Desktop\TTTN\GUI\bin\BUS.dll
+C:\Users\DC Computer\Desktop\TTTN\GUI\bin\DTO.dll
+C:\Users\DC Computer\Desktop\TTTN\GUI\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\DC Computer\Desktop\TTTN\GUI\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\DC Computer\Desktop\TTTN\GUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\DC Computer\Desktop\TTTN\GUI\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\DC Computer\Desktop\TTTN\GUI\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\DC Computer\Desktop\TTTN\GUI\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\DC Computer\Desktop\TTTN\GUI\bin\Newtonsoft.Json.dll
+C:\Users\DC Computer\Desktop\TTTN\GUI\bin\System.Web.Optimization.dll
+C:\Users\DC Computer\Desktop\TTTN\GUI\bin\WebGrease.dll
+C:\Users\DC Computer\Desktop\TTTN\GUI\bin\DAL.dll
+C:\Users\DC Computer\Desktop\TTTN\GUI\bin\BUS.pdb
+C:\Users\DC Computer\Desktop\TTTN\GUI\bin\DTO.pdb
+C:\Users\DC Computer\Desktop\TTTN\GUI\bin\System.Web.Optimization.xml
+C:\Users\DC Computer\Desktop\TTTN\GUI\bin\Newtonsoft.Json.xml
+C:\Users\DC Computer\Desktop\TTTN\GUI\bin\Antlr3.Runtime.pdb
+C:\Users\DC Computer\Desktop\TTTN\GUI\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\DC Computer\Desktop\TTTN\GUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\DC Computer\Desktop\TTTN\GUI\bin\DAL.pdb
+C:\Users\DC Computer\Desktop\TTTN\GUI\obj\Debug\GUI.csproj.CopyComplete
+C:\Users\DC Computer\Desktop\TTTN\GUI\obj\Debug\GUI.dll
+C:\Users\DC Computer\Desktop\TTTN\GUI\obj\Debug\GUI.pdb
+C:\Users\DC Computer\Desktop\TTTN_Trần Thị Hoan\TTTN\GUI\bin\GUI.dll.config
+C:\Users\DC Computer\Desktop\TTTN_Trần Thị Hoan\TTTN\GUI\bin\GUI.dll
+C:\Users\DC Computer\Desktop\TTTN_Trần Thị Hoan\TTTN\GUI\bin\GUI.pdb
+C:\Users\DC Computer\Desktop\TTTN_Trần Thị Hoan\TTTN\GUI\bin\roslyn\csc.exe
+C:\Users\DC Computer\Desktop\TTTN_Trần Thị Hoan\TTTN\GUI\bin\roslyn\csc.exe.config
+C:\Users\DC Computer\Desktop\TTTN_Trần Thị Hoan\TTTN\GUI\bin\roslyn\csc.rsp
+C:\Users\DC Computer\Desktop\TTTN_Trần Thị Hoan\TTTN\GUI\bin\roslyn\csi.exe
+C:\Users\DC Computer\Desktop\TTTN_Trần Thị Hoan\TTTN\GUI\bin\roslyn\csi.exe.config
+C:\Users\DC Computer\Desktop\TTTN_Trần Thị Hoan\TTTN\GUI\bin\roslyn\csi.rsp
+C:\Users\DC Computer\Desktop\TTTN_Trần Thị Hoan\TTTN\GUI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\DC Computer\Desktop\TTTN_Trần Thị Hoan\TTTN\GUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\DC Computer\Desktop\TTTN_Trần Thị Hoan\TTTN\GUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\DC Computer\Desktop\TTTN_Trần Thị Hoan\TTTN\GUI\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\DC Computer\Desktop\TTTN_Trần Thị Hoan\TTTN\GUI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\DC Computer\Desktop\TTTN_Trần Thị Hoan\TTTN\GUI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\DC Computer\Desktop\TTTN_Trần Thị Hoan\TTTN\GUI\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\DC Computer\Desktop\TTTN_Trần Thị Hoan\TTTN\GUI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\DC Computer\Desktop\TTTN_Trần Thị Hoan\TTTN\GUI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\DC Computer\Desktop\TTTN_Trần Thị Hoan\TTTN\GUI\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\DC Computer\Desktop\TTTN_Trần Thị Hoan\TTTN\GUI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\DC Computer\Desktop\TTTN_Trần Thị Hoan\TTTN\GUI\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\DC Computer\Desktop\TTTN_Trần Thị Hoan\TTTN\GUI\bin\roslyn\System.AppContext.dll
+C:\Users\DC Computer\Desktop\TTTN_Trần Thị Hoan\TTTN\GUI\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\DC Computer\Desktop\TTTN_Trần Thị Hoan\TTTN\GUI\bin\roslyn\System.Console.dll
+C:\Users\DC Computer\Desktop\TTTN_Trần Thị Hoan\TTTN\GUI\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\DC Computer\Desktop\TTTN_Trần Thị Hoan\TTTN\GUI\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\DC Computer\Desktop\TTTN_Trần Thị Hoan\TTTN\GUI\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\DC Computer\Desktop\TTTN_Trần Thị Hoan\TTTN\GUI\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\DC Computer\Desktop\TTTN_Trần Thị Hoan\TTTN\GUI\bin\roslyn\System.IO.Compression.dll
+C:\Users\DC Computer\Desktop\TTTN_Trần Thị Hoan\TTTN\GUI\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\DC Computer\Desktop\TTTN_Trần Thị Hoan\TTTN\GUI\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\DC Computer\Desktop\TTTN_Trần Thị Hoan\TTTN\GUI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\DC Computer\Desktop\TTTN_Trần Thị Hoan\TTTN\GUI\bin\roslyn\System.Net.Http.dll
+C:\Users\DC Computer\Desktop\TTTN_Trần Thị Hoan\TTTN\GUI\bin\roslyn\System.Net.Sockets.dll
+C:\Users\DC Computer\Desktop\TTTN_Trần Thị Hoan\TTTN\GUI\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\DC Computer\Desktop\TTTN_Trần Thị Hoan\TTTN\GUI\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\DC Computer\Desktop\TTTN_Trần Thị Hoan\TTTN\GUI\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\DC Computer\Desktop\TTTN_Trần Thị Hoan\TTTN\GUI\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\DC Computer\Desktop\TTTN_Trần Thị Hoan\TTTN\GUI\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\DC Computer\Desktop\TTTN_Trần Thị Hoan\TTTN\GUI\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\DC Computer\Desktop\TTTN_Trần Thị Hoan\TTTN\GUI\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\DC Computer\Desktop\TTTN_Trần Thị Hoan\TTTN\GUI\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\DC Computer\Desktop\TTTN_Trần Thị Hoan\TTTN\GUI\bin\roslyn\System.ValueTuple.dll
+C:\Users\DC Computer\Desktop\TTTN_Trần Thị Hoan\TTTN\GUI\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\DC Computer\Desktop\TTTN_Trần Thị Hoan\TTTN\GUI\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\DC Computer\Desktop\TTTN_Trần Thị Hoan\TTTN\GUI\bin\roslyn\System.Xml.XPath.dll
+C:\Users\DC Computer\Desktop\TTTN_Trần Thị Hoan\TTTN\GUI\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\DC Computer\Desktop\TTTN_Trần Thị Hoan\TTTN\GUI\bin\roslyn\vbc.exe
+C:\Users\DC Computer\Desktop\TTTN_Trần Thị Hoan\TTTN\GUI\bin\roslyn\vbc.exe.config
+C:\Users\DC Computer\Desktop\TTTN_Trần Thị Hoan\TTTN\GUI\bin\roslyn\vbc.rsp
+C:\Users\DC Computer\Desktop\TTTN_Trần Thị Hoan\TTTN\GUI\bin\roslyn\VBCSCompiler.exe
+C:\Users\DC Computer\Desktop\TTTN_Trần Thị Hoan\TTTN\GUI\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\DC Computer\Desktop\TTTN_Trần Thị Hoan\TTTN\GUI\bin\Antlr3.Runtime.dll
+C:\Users\DC Computer\Desktop\TTTN_Trần Thị Hoan\TTTN\GUI\bin\AspNet.ScriptManager.bootstrap.dll
+C:\Users\DC Computer\Desktop\TTTN_Trần Thị Hoan\TTTN\GUI\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\DC Computer\Desktop\TTTN_Trần Thị Hoan\TTTN\GUI\bin\BUS.dll
+C:\Users\DC Computer\Desktop\TTTN_Trần Thị Hoan\TTTN\GUI\bin\DTO.dll
+C:\Users\DC Computer\Desktop\TTTN_Trần Thị Hoan\TTTN\GUI\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\DC Computer\Desktop\TTTN_Trần Thị Hoan\TTTN\GUI\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\DC Computer\Desktop\TTTN_Trần Thị Hoan\TTTN\GUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\DC Computer\Desktop\TTTN_Trần Thị Hoan\TTTN\GUI\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\DC Computer\Desktop\TTTN_Trần Thị Hoan\TTTN\GUI\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\DC Computer\Desktop\TTTN_Trần Thị Hoan\TTTN\GUI\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\DC Computer\Desktop\TTTN_Trần Thị Hoan\TTTN\GUI\bin\Newtonsoft.Json.dll
+C:\Users\DC Computer\Desktop\TTTN_Trần Thị Hoan\TTTN\GUI\bin\System.Web.Optimization.dll
+C:\Users\DC Computer\Desktop\TTTN_Trần Thị Hoan\TTTN\GUI\bin\WebGrease.dll
+C:\Users\DC Computer\Desktop\TTTN_Trần Thị Hoan\TTTN\GUI\bin\DAL.dll
+C:\Users\DC Computer\Desktop\TTTN_Trần Thị Hoan\TTTN\GUI\bin\BUS.pdb
+C:\Users\DC Computer\Desktop\TTTN_Trần Thị Hoan\TTTN\GUI\bin\DTO.pdb
+C:\Users\DC Computer\Desktop\TTTN_Trần Thị Hoan\TTTN\GUI\bin\System.Web.Optimization.xml
+C:\Users\DC Computer\Desktop\TTTN_Trần Thị Hoan\TTTN\GUI\bin\Newtonsoft.Json.xml
+C:\Users\DC Computer\Desktop\TTTN_Trần Thị Hoan\TTTN\GUI\bin\Antlr3.Runtime.pdb
+C:\Users\DC Computer\Desktop\TTTN_Trần Thị Hoan\TTTN\GUI\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\DC Computer\Desktop\TTTN_Trần Thị Hoan\TTTN\GUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\DC Computer\Desktop\TTTN_Trần Thị Hoan\TTTN\GUI\bin\DAL.pdb
+C:\Users\DC Computer\Desktop\TTTN_Trần Thị Hoan\TTTN\GUI\obj\Debug\GUI.csprojAssemblyReference.cache
+C:\Users\DC Computer\Desktop\TTTN_Trần Thị Hoan\TTTN\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+C:\Users\DC Computer\Desktop\TTTN_Trần Thị Hoan\TTTN\GUI\obj\Debug\GUI.csproj.CopyComplete
+C:\Users\DC Computer\Desktop\TTTN_Trần Thị Hoan\TTTN\GUI\obj\Debug\GUI.dll
+C:\Users\DC Computer\Desktop\TTTN_Trần Thị Hoan\TTTN\GUI\obj\Debug\GUI.pdb

@@ -1,0 +1,661 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B47F6BC4-9C80-4200-A5A1-8C84B830C880}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GUI</RootNamespace>
+    <AssemblyName>GUI</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44347</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.bootstrap">
+      <HintPath>..\packages\AspNet.ScriptManager.bootstrap.3.4.1\lib\net45\AspNet.ScriptManager.bootstrap.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.3.4.1\lib\net45\AspNet.ScriptManager.jQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.MSAjax">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.MSAjax.5.0.0\lib\net45\Microsoft.ScriptManager.MSAjax.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.WebForms">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.WebForms.5.0.0\lib\net45\Microsoft.ScriptManager.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Web.Optimization.WebForms">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.WebForms.1.1.3\lib\net45\Microsoft.AspNet.Web.Optimization.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.FriendlyUrls">
+      <HintPath>..\packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.2\lib\net45\Microsoft.AspNet.FriendlyUrls.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\Administrator.aspx" />
+    <Content Include="Admin\css\bootstrap.min.css" />
+    <Content Include="Admin\css\font-awesome.css" />
+    <Content Include="Admin\css\font.css" />
+    <Content Include="Admin\css\jqvmap.css" />
+    <Content Include="Admin\css\lightbox.css" />
+    <Content Include="Admin\css\minimal.css" />
+    <Content Include="Admin\css\monthly.css" />
+    <Content Include="Admin\css\morris.css" />
+    <Content Include="Admin\css\style-responsive.css" />
+    <Content Include="Admin\css\style.css" />
+    <Content Include="Admin\fonts\fontawesome-webfont.svg" />
+    <Content Include="Admin\images\1.png" />
+    <Content Include="Admin\images\2.png" />
+    <Content Include="Admin\images\3.png" />
+    <Content Include="Admin\images\bg.jpg" />
+    <Content Include="Admin\images\bg_login.png" />
+    <Content Include="Admin\images\close.png" />
+    <Content Include="Admin\images\g1.jpg" />
+    <Content Include="Admin\images\g2.jpg" />
+    <Content Include="Admin\images\g3.jpg" />
+    <Content Include="Admin\images\g4.jpg" />
+    <Content Include="Admin\images\g5.jpg" />
+    <Content Include="Admin\images\g6.jpg" />
+    <Content Include="Admin\images\g7.jpg" />
+    <Content Include="Admin\images\g8.jpg" />
+    <Content Include="Admin\images\g9.jpg" />
+    <Content Include="Admin\images\key.png" />
+    <Content Include="Admin\images\login.png" />
+    <Content Include="Admin\images\mail.png" />
+    <Content Include="Admin\images\minimal.png" />
+    <Content Include="Admin\images\nav-expand.png" />
+    <Content Include="Admin\images\next.png" />
+    <Content Include="Admin\images\pass.png" />
+    <Content Include="Admin\images\prev.png" />
+    <Content Include="Admin\images\search-icon.png" />
+    <Content Include="Admin\images\welcome.png" />
+    <Content Include="Admin\js\bootstrap.js" />
+    <Content Include="Admin\js\jquery.dcjqaccordion.2.7.js" />
+    <Content Include="Admin\js\jquery.fileupload.js" />
+    <Content Include="Admin\js\jquery.min.js" />
+    <Content Include="Admin\js\jquery.nicescroll.js" />
+    <Content Include="Admin\js\jquery.scrollTo.js" />
+    <Content Include="Admin\js\jquery.slimscroll.js" />
+    <Content Include="Admin\js\jquery.vmap.asia.js" />
+    <Content Include="Admin\js\jquery.vmap.australia.js" />
+    <Content Include="Admin\js\jquery.vmap.europe.js" />
+    <Content Include="Admin\js\jquery.vmap.js" />
+    <Content Include="Admin\js\jquery.vmap.sampledata.js" />
+    <Content Include="Admin\js\jquery.vmap.world.js" />
+    <Content Include="Admin\js\jquery2.0.3.min.js" />
+    <Content Include="Admin\js\lightbox-plus-jquery.min.js" />
+    <Content Include="Admin\js\monthly.js" />
+    <Content Include="Admin\js\morris.js" />
+    <Content Include="Admin\js\raphael-min.js" />
+    <Content Include="Admin\js\script.js" />
+    <Content Include="Admin\js\scripts.js" />
+    <Content Include="Admin\login.aspx" />
+    <Content Include="Admin\QuanLyChiTietTinTuc.aspx" />
+    <Content Include="Admin\QuanLyQuaTang.aspx" />
+    <Content Include="Admin\QuanLySanPham.aspx" />
+    <Content Include="Admin\QuanLyTinTuc.aspx" />
+    <Content Include="Admin\SL.txt" />
+    <Content Include="Admin\ThemMoiTinTuc.aspx" />
+    <Content Include="Admin\ThemMoiTinTucDetail.aspx" />
+    <Content Include="Admin\ThemQuaTang.aspx" />
+    <Content Include="Admin\ThemSanPham.aspx" />
+    <Content Include="ChiTietSanPham.aspx" />
+    <Content Include="ChiTietTinTuc.aspx" />
+    <Content Include="Chi_Tiet_QT.aspx" />
+    <Content Include="css\css.css" />
+    <Content Include="css\StyleZipAll14.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="GioHang.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="huong-dan-mua-hang.aspx" />
+    <Content Include="images\26.jpg" />
+    <Content Include="images\address-shop1.jpg" />
+    <Content Include="images\bg-1.jpg" />
+    <Content Include="images\butlet_news.png" />
+    <Content Include="images\cham-soc-da-mat-menu-left.jpg" />
+    <Content Include="images\cham-soc-toan-than-menu-left.jpg" />
+    <Content Include="images\ChiTay.png" />
+    <Content Include="images\dangky.png" />
+    <Content Include="images\DangKyBoCongThuong.png" />
+    <Content Include="images\dangnhap.png" />
+    <Content Include="images\dangnhapfacebook.png" />
+    <Content Include="images\danh-muc\cham-soc-da-mat-icon.png" />
+    <Content Include="images\danh-muc\cham-soc-da-mat-menu-right.jpg" />
+    <Content Include="images\danh-muc\cham-soc-toan-than-icon.png" />
+    <Content Include="images\danh-muc\cham-soc-toan-than-menu-right.jpg" />
+    <Content Include="images\danh-muc\ho-tro-dieu-tri-icon.png" />
+    <Content Include="images\danh-muc\ho-tro-dieu-tri-menu-right.jpg" />
+    <Content Include="images\danh-muc\my-pham-cham-soc-toc-icon.png" />
+    <Content Include="images\danh-muc\my-pham-cham-soc-toc-menu-right.jpg" />
+    <Content Include="images\danh-muc\my-pham-trang-diem-icon.png" />
+    <Content Include="images\danh-muc\my-pham-trang-diem-menu-right.jpg" />
+    <Content Include="images\danh-muc\sale-off-moi-tuan-icon.png" />
+    <Content Include="images\danh-muc\sale-off-moi-tuan-menu-right.jpg" />
+    <Content Include="images\danh-muc\suc-khoe-dinh-duong-icon.png" />
+    <Content Include="images\danh-muc\suc-khoe-dinh-duong-menu-right.jpg" />
+    <Content Include="images\danh-muc\thuong-hieu-ua-chuong-icon.png" />
+    <Content Include="images\danh-muc\thuong-hieu-ua-chuong-menu-right.jpg" />
+    <Content Include="images\giao-hang-1-min.png" />
+    <Content Include="images\giao-hang-2-min.png" />
+    <Content Include="images\giao-hang-3-min.png" />
+    <Content Include="images\ho-tro-dieu-tri-menu-left.jpg" />
+    <Content Include="images\icon-grid.png" />
+    <Content Include="images\icon-list.png" />
+    <Content Include="images\iconlogo.ico" />
+    <Content Include="images\logohvnet.png" />
+    <Content Include="images\logo\giao-hang--1.png" />
+    <Content Include="images\logo\ho-tro-247--1.png" />
+    <Content Include="images\logo\hoan-tra-tien--1.png" />
+    <Content Include="images\logo\qua-tang--1.png" />
+    <Content Include="images\logo\thanh-toan--1.png" />
+    <Content Include="images\logo\thong-tin--1.png" />
+    <Content Include="images\logo_mb.png" />
+    <Content Include="images\mua-la-co-qua-ok.png" />
+    <Content Include="images\mua-xuan-2020-0.jpg" />
+    <Content Include="images\my-pham-trang-diem-menu-left.jpg" />
+    <Content Include="images\QuaTang\anhBaiTap.jpg" />
+    <Content Include="images\QuaTang\Kem-chong-nang-Suncreen-50-Coco-Secret-.jpg" />
+    <Content Include="images\QuaTang\Kem-duong-da-tinh-nghe-dau-dua-sap-ong-CocoSecret-.jpg" />
+    <Content Include="images\QuaTang\Mascara-dau-dua-duong-mi-Coco-Secret-.jpg" />
+    <Content Include="images\QuaTang\Mat-Na-Bun-Shiseido-Naturgo-Lot-mun-cam-mun-dau-den-.jpg" />
+    <Content Include="images\QuaTang\Mat-na-giay-Its-Real-Squeeze-Mask-Innisfree-347.jpg" />
+    <Content Include="images\QuaTang\Mat-Na-Hong-Sam-va-Collagel-3D-FOODAHOLIC-.jpg" />
+    <Content Include="images\QuaTang\Mat-na-mat-Crystal-Collagen-Gold-Duong-mat-va-tri-tham-quang-mat-.jpg" />
+    <Content Include="images\QuaTang\Mat-na-thu-sieu-cute-.jpg" />
+    <Content Include="images\QuaTang\Mạt-nạ-miéng-TONYMOLY-Im-Real-Mask-Sheet-363.jpg" />
+    <Content Include="images\QuaTang\Son-duong-moi-dau-dua-sap-ong-Cocoon-.jpg" />
+    <Content Include="images\QuaTang\Vien-Serum-Duong-Toc-Thai-Lan-MeNas-439.jpg" />
+    <Content Include="images\QuaTang\Xa-phong-Dau-dua-Que-277.jpg" />
+    <Content Include="images\SanPham\117970873_200180791441473_6514583870128502270_o.jpg" />
+    <Content Include="images\SanPham\89982117_112327360397064_6299689254737936384_o.jpg" />
+    <Content Include="images\SanPham\90019468_1139067583114645_5799343680925990912_o.jpg" />
+    <Content Include="images\SanPham\907483.jpg" />
+    <Content Include="images\SanPham\agirl.allaboutgirlsvn_BeZmH6tBJZZ.jpg" />
+    <Content Include="images\SanPham\anh-nen-meo-de-thuong_093846627.jpg" />
+    <Content Include="images\SanPham\background-den-dep-nhat-15.jpg" />
+    <Content Include="images\SanPham\background-luong-chuc-remix.jpg" />
+    <Content Include="images\SanPham\background-mashup-faded-x-con-duong-binh-pham-rem.jpg" />
+    <Content Include="images\SanPham\background-su-thanh-hoa-remix-na-anh.jpg" />
+    <Content Include="images\SanPham\background-tam-lang-nhu-nuoc-x-quang-dong-khong.jpg" />
+    <Content Include="images\SanPham\But-ke-mat-Aritaum-Idol-Pen-Liner-2447.jpg" />
+    <Content Include="images\SanPham\cach-cham-soc-de-co-doi-moi-cang-mong%281%29.jpg" />
+    <Content Include="images\SanPham\Chi-Ke-May-2-Dau-Eco-EyeBrown-Pencil-INNISFREE-2238.jpg" />
+    <Content Include="images\SanPham\hinh anh kem nen dermacol h5.jpg" />
+    <Content Include="images\SanPham\hinh anh kem nen dermacol h6%281%29.jpg" />
+    <Content Include="images\SanPham\hinh anh son kem 3ce imua h1.jpg" />
+    <Content Include="images\SanPham\hinh anh son kem ly 3ce new nude imua h2.jpg" />
+    <Content Include="images\SanPham\hinh anh son kem ly 3ce private imua h2.jpg" />
+    <Content Include="images\SanPham\hinh-anh- kem-chong-nang-natural-sun-eco-ice-air-puff-imua-h1.jpg" />
+    <Content Include="images\SanPham\hinh-anh- kem-chong-nang-natural-sun-eco-ice-air-puff-imua-h3.jpg" />
+    <Content Include="images\SanPham\hinh-anh- kem-chong-nang-natural-sun-eco-ice-air-puff-imua-h4.jpg" />
+    <Content Include="images\SanPham\hinh-anh-but-da-ke-mat-aritaum-idol-pen-liner-h4%281%29.jpg" />
+    <Content Include="images\SanPham\hinh-anh-but-da-ke-mat-aritaum-idol-pen-liner-imua-h2.jpg" />
+    <Content Include="images\SanPham\hinh-anh-but-da-ke-mat-aritaum-idol-pen-liner-imua-h3.jpg" />
+    <Content Include="images\SanPham\hinh-anh-chi-ke-may-2-dau-eco-eyebrown-pencil-Innisfree-imua-1%281%29.jpg" />
+    <Content Include="images\SanPham\hinh-anh-chi-ke-may-2-dau-eco-eyebrown-pencil-Innisfree-imua-2%281%29.jpg" />
+    <Content Include="images\SanPham\hinh-anh-chi-ke-may-2-dau-eco-eyebrown-pencil-Innisfree-imua-3.jpg" />
+    <Content Include="images\SanPham\hinh-anh-kem-che-khuyet-diem-Dermacol-Make-Up-Cover-imua-h2.jpg" />
+    <Content Include="images\SanPham\hinh-anh-kem-chong-nang-pizu-imua-h1 %281%29.jpg" />
+    <Content Include="images\SanPham\hinh-anh-kem-chong-nang-pizu-imua-h1.jpg" />
+    <Content Include="images\SanPham\hinh-anh-kem-chong-nang-pizu-imua-h2.jpg" />
+    <Content Include="images\SanPham\hinh-anh-kem-duong-am-Laneige-Water-Bank-Hydro-Cream-EX-h12.jpg" />
+    <Content Include="images\SanPham\hinh-anh-kem-duong-am-Laneige-Water-Bank-Hydro-Cream-EX-h4.png" />
+    <Content Include="images\SanPham\hinh-anh-kem-duong-am-Laneige-Water-Bank-Hydro-Cream-EX-h9.jpg" />
+    <Content Include="images\SanPham\hinh-anh-kem-nen-neutrogena-skin-clearing-oil-imua-h1.jpg" />
+    <Content Include="images\SanPham\hinh-anh-kem-nen-neutrogena-skin-clearing-oil-imua-h2.jpg" />
+    <Content Include="images\SanPham\hinh-anh-kem-nen-neutrogena-skin-clearing-oil-imua-h4.jpg" />
+    <Content Include="images\SanPham\hinh-anh-phan-ma-hong-3-ce-h11.jpg" />
+    <Content Include="images\SanPham\hinh-anh-phan-ma-hong-3-ce-h3%281%29.jpg" />
+    <Content Include="images\SanPham\hinh-anh-phan-ma-hong-3-ce-h5.jpg" />
+    <Content Include="images\SanPham\hinh-anh-phan-ma-hong-kem-abba-shy-smile-cheek-pot-imua-h1.jpg" />
+    <Content Include="images\SanPham\hinh-anh-phan-ma-hong-kem-abba-shy-smile-cheek-pot-imua-h2.jpg" />
+    <Content Include="images\SanPham\hinh-anh-phan-ma-hong-kem-abba-shy-smile-cheek-pot-imua-h3.jpg" />
+    <Content Include="images\SanPham\hinh-anh-phan-tuoi-ver-22-bounce-up-pact-spf-50-imua-h1.jpg" />
+    <Content Include="images\SanPham\hinh-anh-phan-tuoi-ver-22-bounce-up-pact-spf-50-imua-h2.jpg" />
+    <Content Include="images\SanPham\hinh-anh-phan-tuoi-ver-22-bounce-up-pact-spf-50-imua-h3.jpg" />
+    <Content Include="images\SanPham\hinh-anh-serum-chong-nang-trang-diem-da-mat-ban-ngay-shewhite-imua-h1.jpg" />
+    <Content Include="images\SanPham\hinh-anh-serum-chong-nang-trang-diem-da-mat-ban-ngay-shewhite-imua-h3.jpg" />
+    <Content Include="images\SanPham\hinh-anh-serum-chong-nang-trang-diem-da-mat-ban-ngay-shewhite-imua-h4.jpg" />
+    <Content Include="images\SanPham\hinh-anh-son-dior-999-h1.jpg" />
+    <Content Include="images\SanPham\hinh-anh-son-dior-999-h10.jpg" />
+    <Content Include="images\SanPham\hinh-anh-son-dior-999-h9.jpg" />
+    <Content Include="images\SanPham\hinh-anh-son-duong-moi-Dior Addict-Lip-Glow-Matte-imua-h2.jpg" />
+    <Content Include="images\SanPham\hinh-anh-son-duong-moi-Dior Addict-Lip-Glow-Matte-imua-h20.jpg" />
+    <Content Include="images\SanPham\hinh-anh-son-duong-moi-Dior Addict-Lip-Glow-Matte-imua-h4.jpg" />
+    <Content Include="images\SanPham\hinh-anh-son-duong-moi-h1.jpg" />
+    <Content Include="images\SanPham\hinh-anh-son-duong-moi-h4.jpg" />
+    <Content Include="images\SanPham\hinh-anh-son-duong-moi-h6.jpg" />
+    <Content Include="images\SanPham\hinh-anh-son-kem-li-3ce-h14.jpg" />
+    <Content Include="images\SanPham\hinh-anh-son-kem-li-3ce-h3%281%29.jpg" />
+    <Content Include="images\SanPham\hinh-anh-son-kem-li-3ce-h6.jpg" />
+    <Content Include="images\SanPham\hinh-anh-son-li-dang-thoi-kem-dau-tan-son-color-blur-by-studio-cream-matte-pencil-smudger-imua-h1.jpg" />
+    <Content Include="images\SanPham\hinh-anh-son-li-dang-thoi-kem-dau-tan-son-color-blur-by-studio-cream-matte-pencil-smudger-imua-h2.jpg" />
+    <Content Include="images\SanPham\hinh-anh-son-li-dang-thoi-kem-dau-tan-son-color-blur-by-studio-cream-matte-pencil-smudger-imua-h3.jpg" />
+    <Content Include="images\SanPham\hinh-anh-xit-chong-nang-Neutrogena-Ultra-Sheer-Body-Mist-imua-1.jpg" />
+    <Content Include="images\SanPham\hinh-anh-xit-chong-nang-Neutrogena-Ultra-Sheer-Body-Mist-imua-2.jpg" />
+    <Content Include="images\SanPham\hinh-anh-xit-chong-nang-Neutrogena-Ultra-Sheer-Body-Mist-imua-4.jpg" />
+    <Content Include="images\SanPham\Kem-Che-Khuyet-Diem-Dermacol-Makeup-Cover-Cream-2701.jpg" />
+    <Content Include="images\SanPham\Kem-Chong-Nang-La-Roche-Posay-Chinh-Hang-3966.png" />
+    <Content Include="images\SanPham\kem-chong-nang-la-roche-posay-chinh-hang-hinh-2.jpg" />
+    <Content Include="images\SanPham\kem-chong-nang-la-roche-posay-chinh-hang-hinh-6.jpg" />
+    <Content Include="images\SanPham\kem-chong-nang-la-roche-posay-chinh-hang-hinh-7.jpg" />
+    <Content Include="images\SanPham\Kem-Chong-Nang-Natural-Sun-Eco-Ice-Air-Puff-Sun-SPF50-PA-2202.jpg" />
+    <Content Include="images\SanPham\Kem-chong-nang-Pizu-2291.jpg" />
+    <Content Include="images\SanPham\Kem-Duong-Am-Laneige-Water-Bank-Moisture-Cream-EX-50ml-3953.jpg" />
+    <Content Include="images\SanPham\Kem-duong-da-ban-dem-Forencos-Peptide-han-quoc-16-min%281%29.jpg" />
+    <Content Include="images\SanPham\Kem-duong-da-ban-dem-Forencos-Peptide-Han-Quoc-4393.jpg" />
+    <Content Include="images\SanPham\Kem-duong-da-ban-dem-Forencos-Peptide-han-quoc-5-min%281%29.jpg" />
+    <Content Include="images\SanPham\Kem-duong-da-ban-dem-Forencos-Peptide-han-quoc-7%282%29.jpg" />
+    <Content Include="images\SanPham\Kem-nen-NEUTROGENA-Skin-Clearing-Oil-Danh-cho-da-mun-2109.jpg" />
+    <Content Include="images\SanPham\Kem-tri-mun-cephar-nga-chinh-hang-12-min.jpg" />
+    <Content Include="images\SanPham\Kem-tri-mun-cephar-nga-chinh-hang-14-min.jpg" />
+    <Content Include="images\SanPham\Kem-Tri-Mun-Cephar-Nga-Chinh-Hang-4484.jpg" />
+    <Content Include="images\SanPham\Kem-tri-mun-cephar-nga-chinh-hang-9.jpg" />
+    <Content Include="images\SanPham\Kem-tri-mun-yoosun-rau-ma-24.jpg" />
+    <Content Include="images\SanPham\Kem-tri-mun-yoosun-rau-ma-4.jpg" />
+    <Content Include="images\SanPham\Kem-Tri-Mun-Yoosun-Rau-Ma-4470.jpg" />
+    <Content Include="images\SanPham\Kem-tri-mun-yoosun-rau-ma-8.jpg" />
+    <Content Include="images\SanPham\Kem-tri-tham-mat-Kpem-Vizivit-Nga-4.jpg" />
+    <Content Include="images\SanPham\Kem-tri-tham-Smoodthe-nhat-ban-15g-17.jpg" />
+    <Content Include="images\SanPham\Kem-tri-tham-Smoodthe-nhat-ban-15g-3.jpg" />
+    <Content Include="images\SanPham\Kem-Tri-Tham-SmoodthE-Nhat-Ban-15g-4518.jpg" />
+    <Content Include="images\SanPham\Kem-tri-tham-Smoodthe-nhat-ban-15g-7.jpg" />
+    <Content Include="images\SanPham\Phan-Ma-Hong-3CE-stylenanda-Face-Blush-2788.jpg" />
+    <Content Include="images\SanPham\Phan-ma-hong-kem-ABBA-Shy-Smile-Cheek-Pot-2268.jpg" />
+    <Content Include="images\SanPham\Phan-tuoi-Ver-22-Bounce-Up-Pact-SPF-50PA-2475.jpg" />
+    <Content Include="images\SanPham\Serum-chong-nang-trang-diem-da-mat-ban-ngay-Shewhite-2603.jpg" />
+    <Content Include="images\SanPham\Son-Dior-999-Chinh-Hang-Phap-3958.jpg" />
+    <Content Include="images\SanPham\Son-Duong-Dior-Addict-Lip-Glow-Chinh-Hang-Phap-4194 %281%29.jpg" />
+    <Content Include="images\SanPham\Son-Duong-Dior-Addict-Lip-Glow-Chinh-Hang-Phap-4194.jpg" />
+    <Content Include="images\SanPham\Son-Duong-Moi-Bioderma-Atoderm-Baume-Levres-2773.jpg" />
+    <Content Include="images\SanPham\Son-Duong-Moi-co-mau-Ecosy-Nature-Tint-Stick-The-Collagen-4202.jpg" />
+    <Content Include="images\SanPham\Son-Kem-Li-3CE-Stylenanda-Velvet-Lip-Tint-2654.jpg" />
+    <Content Include="images\SanPham\Son-Li-3CE-Stylenanda-Matte-Lip-Color-son-vo-vang-2018-3838.jpg" />
+    <Content Include="images\SanPham\Son-li-dang-thoi-kem-dau-tan-son-Color-Blur-By-Lip-Studio-Cream-Matte-Pencil-Smudger-2378.jpg" />
+    <Content Include="images\SanPham\Sua-rua-mat-duong-am-oc-sen-Anjo-Snall-Foam-Cleansing-150ml-11.jpg" />
+    <Content Include="images\SanPham\Sua-rua-mat-duong-am-oc-sen-Anjo-Snall-Foam-Cleansing-150ml-18.jpg" />
+    <Content Include="images\SanPham\Sua-Rua-Mat-Duong-Am-Oc-Sen-Anjo-Snall-Foam-Cleansing-150ml-4449.jpg" />
+    <Content Include="images\SanPham\Sua-rua-mat-duong-am-oc-sen-Anjo-Snall-Foam-Cleansing-150ml-8-min.jpg" />
+    <Content Include="images\SanPham\Sua-rua-mat-hong-sam-Ecotop-Red-Ginseng-Foam-Cleansing-120ml-18.jpg" />
+    <Content Include="images\SanPham\Sua-rua-mat-hong-sam-Ecotop-Red-Ginseng-Foam-Cleansing-120ml-3-min.jpg" />
+    <Content Include="images\SanPham\Sua-Rua-Mat-Hong-Sam-Ecotop-Red-Ginseng-Foam-Cleansing-120ml-4452.jpg" />
+    <Content Include="images\SanPham\Sua-rua-mat-hong-sam-Ecotop-Red-Ginseng-Foam-Cleansing-120ml-6.jpg" />
+    <Content Include="images\SanPham\Untitled-3-01-min.jpg" />
+    <Content Include="images\SanPham\Untitled77777777%282%29.jpg" />
+    <Content Include="images\SanPham\Untitled77777777%282%29.png" />
+    <Content Include="images\SanPham\Xit-chong-nang-Neutrogena-Ultra-Sheer-Body-Mist-Su-dung-cho-moi-loai-da-4227.jpg" />
+    <Content Include="images\tintuc\89982117_112327360397064_6299689254737936384_o.jpg" />
+    <Content Include="images\tintuc\90019468_1139067583114645_5799343680925990912_o.jpg" />
+    <Content Include="images\tintuc\Cach-chua-tri-seo-loi-tu-nguyen-lieu-thien-nhien-.jpg" />
+    <Content Include="images\tintuc\Cach-dieu-tri-seo-ro-tu-thien-nhien-co-dem-lai-hieu-qua-.jpg" />
+    <Content Include="images\tintuc\Cach-tri-seo-lom-thuy-dau-tu-thien-nhien-an-toan-hieu-qua-.jpg" />
+    <Content Include="images\tintuc\Cach-tri-seo-lom-tren-mat-voi-vitamin-E-don-gian-.jpg" />
+    <Content Include="images\tintuc\Cach-tri-seo-lom-va-nhung-sai-lam-ban-chua-biet-.jpg" />
+    <Content Include="images\tintuc\Di-tim-cach-dieu-tri-seo-lom-.jpg" />
+    <Content Include="images\tintuc\Di-tim-cach-tri-seo-loi-hieu-qua-nhanh-chong-.jpg" />
+    <Content Include="images\tintuc\hinh anh cach tri seo lom tren mat h1%283%29.jpg" />
+    <Content Include="images\tintuc\hinh anh cach tri seo lom tren mat h2%281%29.jpg" />
+    <Content Include="images\tintuc\hinh anh cach tri seo ro h1%281%29.jpg" />
+    <Content Include="images\tintuc\hinh anh cach tri seo ro h2.jpg" />
+    <Content Include="images\tintuc\hinh anh cach tri seo ro h3.jpg" />
+    <Content Include="images\tintuc\Nhung-cach-tri-seo-ro-tu-thien-nhien-an-toan-.jpg" />
+    <Content Include="images\tintuc\REVIEW-KEM-TAY-LONG-VEET-CAC-CO-NANG-DANG-AM-ANH-VIOLONG-VAO-HOI-NHANH-.jpg" />
+    <Content Include="images\tintuc\Tri-seo-ro-lau-nam-co-kho-nhu-ban-nghi-.jpg" />
+    <Content Include="index.aspx" />
+    <Content Include="kho-qua-tang.aspx" />
+    <Content Include="lien-he.aspx" />
+    <Content Include="sale-off.aspx" />
+    <Content Include="sanpham.aspx" />
+    <Content Include="SanPham\DSSanPhamMa.aspx" />
+    <Content Include="SanPham\DSSanPhamTen.aspx" />
+    <Content Include="SanPham\SL.txt" />
+    <Content Include="SL.txt" />
+    <Content Include="ThemQuaTang.aspx" />
+    <Content Include="Tim-Kiem.aspx" />
+    <Content Include="tin-tuc.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Bundle.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\Administrator.aspx.cs">
+      <DependentUpon>Administrator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Administrator.aspx.designer.cs">
+      <DependentUpon>Administrator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Dashboard.Master.cs">
+      <DependentUpon>Dashboard.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Dashboard.Master.designer.cs">
+      <DependentUpon>Dashboard.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\QuanLyChiTietTinTuc.aspx.cs">
+      <DependentUpon>QuanLyChiTietTinTuc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\QuanLyChiTietTinTuc.aspx.designer.cs">
+      <DependentUpon>QuanLyChiTietTinTuc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\QuanLyQuaTang.aspx.cs">
+      <DependentUpon>QuanLyQuaTang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\QuanLyQuaTang.aspx.designer.cs">
+      <DependentUpon>QuanLyQuaTang.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\QuanLySanPham.aspx.cs">
+      <DependentUpon>QuanLySanPham.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\QuanLySanPham.aspx.designer.cs">
+      <DependentUpon>QuanLySanPham.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\QuanLyTinTuc.aspx.cs">
+      <DependentUpon>QuanLyTinTuc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\QuanLyTinTuc.aspx.designer.cs">
+      <DependentUpon>QuanLyTinTuc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ThemMoiTinTuc.aspx.cs">
+      <DependentUpon>ThemMoiTinTuc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ThemMoiTinTuc.aspx.designer.cs">
+      <DependentUpon>ThemMoiTinTuc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ThemMoiTinTucDetail.aspx.cs">
+      <DependentUpon>ThemMoiTinTucDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ThemMoiTinTucDetail.aspx.designer.cs">
+      <DependentUpon>ThemMoiTinTucDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ThemQuaTang.aspx.cs">
+      <DependentUpon>ThemQuaTang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ThemQuaTang.aspx.designer.cs">
+      <DependentUpon>ThemQuaTang.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ThemSanPham.aspx.cs">
+      <DependentUpon>ThemSanPham.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ThemSanPham.aspx.designer.cs">
+      <DependentUpon>ThemSanPham.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChiTietSanPham.aspx.cs">
+      <DependentUpon>ChiTietSanPham.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChiTietSanPham.aspx.designer.cs">
+      <DependentUpon>ChiTietSanPham.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChiTietTinTuc.aspx.cs">
+      <DependentUpon>ChiTietTinTuc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChiTietTinTuc.aspx.designer.cs">
+      <DependentUpon>ChiTietTinTuc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Chi_Tiet_QT.aspx.cs">
+      <DependentUpon>Chi_Tiet_QT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Chi_Tiet_QT.aspx.designer.cs">
+      <DependentUpon>Chi_Tiet_QT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GioHang.aspx.cs">
+      <DependentUpon>GioHang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GioHang.aspx.designer.cs">
+      <DependentUpon>GioHang.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="huong-dan-mua-hang.aspx.cs">
+      <DependentUpon>huong-dan-mua-hang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="huong-dan-mua-hang.aspx.designer.cs">
+      <DependentUpon>huong-dan-mua-hang.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kho-qua-tang.aspx.cs">
+      <DependentUpon>kho-qua-tang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kho-qua-tang.aspx.designer.cs">
+      <DependentUpon>kho-qua-tang.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lien-he.aspx.cs">
+      <DependentUpon>lien-he.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="lien-he.aspx.designer.cs">
+      <DependentUpon>lien-he.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sale-off.aspx.cs">
+      <DependentUpon>sale-off.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sale-off.aspx.designer.cs">
+      <DependentUpon>sale-off.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sanpham.aspx.cs">
+      <DependentUpon>sanpham.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sanpham.aspx.designer.cs">
+      <DependentUpon>sanpham.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SanPham\DSSanPhamMa.aspx.cs">
+      <DependentUpon>DSSanPhamMa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SanPham\DSSanPhamMa.aspx.designer.cs">
+      <DependentUpon>DSSanPhamMa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SanPham\DSSanPhamTen.aspx.cs">
+      <DependentUpon>DSSanPhamTen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SanPham\DSSanPhamTen.aspx.designer.cs">
+      <DependentUpon>DSSanPhamTen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ThemQuaTang.aspx.cs">
+      <DependentUpon>ThemQuaTang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ThemQuaTang.aspx.designer.cs">
+      <DependentUpon>ThemQuaTang.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tim-Kiem.aspx.cs">
+      <DependentUpon>Tim-Kiem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tim-Kiem.aspx.designer.cs">
+      <DependentUpon>Tim-Kiem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tin-tuc.aspx.cs">
+      <DependentUpon>tin-tuc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tin-tuc.aspx.designer.cs">
+      <DependentUpon>tin-tuc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webForm\MasterPage.Master.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webForm\MasterPage.Master.designer.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="webForm\MasterPage_khongMenuDoc.Master.cs">
+      <DependentUpon>MasterPage_khongMenuDoc.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webForm\MasterPage_khongMenuDoc.Master.designer.cs">
+      <DependentUpon>MasterPage_khongMenuDoc.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BUS\BUS.csproj">
+      <Project>{acd7960c-4c8f-4341-b2fa-2f231c31ba8c}</Project>
+      <Name>BUS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO\DTO.csproj">
+      <Project>{bea81992-cb35-4189-b556-2977273d7250}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\Dashboard.Master" />
+    <Content Include="Admin\fonts\fontawesome-webfont.eot" />
+    <Content Include="Admin\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Admin\fonts\fontawesome-webfont.woff" />
+    <Content Include="Admin\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Admin\fonts\FontAwesome.otf" />
+    <Content Include="Admin\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Admin\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="webForm\MasterPage.Master" />
+    <Content Include="webForm\MasterPage_khongMenuDoc.Master" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51317</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44347/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
